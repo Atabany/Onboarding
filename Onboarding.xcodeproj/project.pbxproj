@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		2D27FD1F27D8F0AC00BF7A58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD1E27D8F0AC00BF7A58 /* AppDelegate.swift */; };
 		2D27FD2127D8F0AC00BF7A58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD2027D8F0AC00BF7A58 /* SceneDelegate.swift */; };
-		2D27FD2327D8F0AC00BF7A58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD2227D8F0AC00BF7A58 /* ViewController.swift */; };
 		2D27FD2627D8F0AC00BF7A58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D27FD2427D8F0AC00BF7A58 /* Main.storyboard */; };
 		2D27FD2827D8F0AD00BF7A58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D27FD2727D8F0AD00BF7A58 /* Assets.xcassets */; };
 		2D27FD2B27D8F0AD00BF7A58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D27FD2927D8F0AD00BF7A58 /* LaunchScreen.storyboard */; };
 		2D27FD3627D8F0AD00BF7A58 /* OnboardingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD3527D8F0AD00BF7A58 /* OnboardingTests.swift */; };
 		2D27FD4027D8F0AD00BF7A58 /* OnboardingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD3F27D8F0AD00BF7A58 /* OnboardingUITests.swift */; };
 		2D27FD4227D8F0AD00BF7A58 /* OnboardingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD4127D8F0AD00BF7A58 /* OnboardingUITestsLaunchTests.swift */; };
+		2D27FD4F27D8FF8E00BF7A58 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD4E27D8FF8E00BF7A58 /* LoadingViewController.swift */; };
+		2D27FD5327D900E700BF7A58 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD5227D900E700BF7A58 /* Constants.swift */; };
+		2D27FD5527D9052A00BF7A58 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD5427D9052A00BF7A58 /* TabBarController.swift */; };
+		2D27FD5927D942BD00BF7A58 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD5827D942BD00BF7A58 /* Helper.swift */; };
+		2D27FD5B27D9449C00BF7A58 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD5A27D9449C00BF7A58 /* SettingsViewController.swift */; };
+		2D27FD5D27D9473E00BF7A58 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD5C27D9473E00BF7A58 /* OnboardingViewController.swift */; };
+		2D27FD6027D9488400BF7A58 /* PresenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD5F27D9488400BF7A58 /* PresenterManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,6 @@
 		2D27FD1B27D8F0AC00BF7A58 /* Onboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Onboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D27FD1E27D8F0AC00BF7A58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D27FD2027D8F0AC00BF7A58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2D27FD2227D8F0AC00BF7A58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D27FD2527D8F0AC00BF7A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D27FD2727D8F0AD00BF7A58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D27FD2A27D8F0AD00BF7A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		2D27FD3B27D8F0AD00BF7A58 /* OnboardingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnboardingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D27FD3F27D8F0AD00BF7A58 /* OnboardingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUITests.swift; sourceTree = "<group>"; };
 		2D27FD4127D8F0AD00BF7A58 /* OnboardingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2D27FD4E27D8FF8E00BF7A58 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		2D27FD5227D900E700BF7A58 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2D27FD5427D9052A00BF7A58 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		2D27FD5827D942BD00BF7A58 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		2D27FD5A27D9449C00BF7A58 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		2D27FD5C27D9473E00BF7A58 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		2D27FD5F27D9488400BF7A58 /* PresenterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +111,13 @@
 		2D27FD1D27D8F0AC00BF7A58 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				2D27FD5E27D9487900BF7A58 /* Manager */,
+				2D27FD5727D942B400BF7A58 /* Helper */,
+				2D27FD5627D9428E00BF7A58 /* Controller */,
 				2D27FD1E27D8F0AC00BF7A58 /* AppDelegate.swift */,
 				2D27FD2027D8F0AC00BF7A58 /* SceneDelegate.swift */,
-				2D27FD2227D8F0AC00BF7A58 /* ViewController.swift */,
 				2D27FD2427D8F0AC00BF7A58 /* Main.storyboard */,
+				2D27FD5227D900E700BF7A58 /* Constants.swift */,
 				2D27FD2727D8F0AD00BF7A58 /* Assets.xcassets */,
 				2D27FD2927D8F0AD00BF7A58 /* LaunchScreen.storyboard */,
 				2D27FD2C27D8F0AD00BF7A58 /* Info.plist */,
@@ -125,6 +140,33 @@
 				2D27FD4127D8F0AD00BF7A58 /* OnboardingUITestsLaunchTests.swift */,
 			);
 			path = OnboardingUITests;
+			sourceTree = "<group>";
+		};
+		2D27FD5627D9428E00BF7A58 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2D27FD4E27D8FF8E00BF7A58 /* LoadingViewController.swift */,
+				2D27FD5427D9052A00BF7A58 /* TabBarController.swift */,
+				2D27FD5A27D9449C00BF7A58 /* SettingsViewController.swift */,
+				2D27FD5C27D9473E00BF7A58 /* OnboardingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2D27FD5727D942B400BF7A58 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2D27FD5827D942BD00BF7A58 /* Helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		2D27FD5E27D9487900BF7A58 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2D27FD5F27D9488400BF7A58 /* PresenterManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +300,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D27FD2327D8F0AC00BF7A58 /* ViewController.swift in Sources */,
+				2D27FD4F27D8FF8E00BF7A58 /* LoadingViewController.swift in Sources */,
 				2D27FD1F27D8F0AC00BF7A58 /* AppDelegate.swift in Sources */,
+				2D27FD5B27D9449C00BF7A58 /* SettingsViewController.swift in Sources */,
+				2D27FD6027D9488400BF7A58 /* PresenterManager.swift in Sources */,
+				2D27FD5D27D9473E00BF7A58 /* OnboardingViewController.swift in Sources */,
 				2D27FD2127D8F0AC00BF7A58 /* SceneDelegate.swift in Sources */,
+				2D27FD5527D9052A00BF7A58 /* TabBarController.swift in Sources */,
+				2D27FD5327D900E700BF7A58 /* Constants.swift in Sources */,
+				2D27FD5927D942BD00BF7A58 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
