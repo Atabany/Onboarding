@@ -8,6 +8,13 @@
 import Foundation
 
 enum K {
+    
+    enum NavigationTitles {
+        static let settings = "Settings"
+        static let home     = "Home"
+    }
+    
+    
     enum Segues {
         static let showOnboarding = "showOnboarding"
         static let showLoginSignup = "showLoginSignup"

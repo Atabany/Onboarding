@@ -17,7 +17,5 @@ struct Slide {
         Slide(imageName: "imSlide1", title: "Welcome to Trafel", description: "Trafel allows you to travel around the world, make new friends and create memorable experiences."),
         Slide(imageName: "imSlide2", title: "Connect Socially", description: "Connect across continents to strangers via the app."),
         Slide(imageName: "imSlide3", title: "Safe And Secure", description: "Each trip is planned according to the strictest safety standards to ensure passenger safety."),
-        Slide(imageName: "imSlide3", title: "Safe And Secure", description: "Each trip is planned according to the strictest safety standards to ensure passenger safety.")
-
     ]
 }

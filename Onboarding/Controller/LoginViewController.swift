@@ -7,7 +7,7 @@
 
 
 import UIKit
-
+import MBProgressHUD
 
 protocol LoginViewControllerDelegate: AnyObject {
     func didSuccessfullyLogin()
@@ -45,7 +45,7 @@ class LoginViewController: UIViewController {
     }
     
     
-    private let isSuccessfulLogin = false
+    private let isSuccessfulLogin = true
     
     weak var delegate: LoginViewControllerDelegate!
     
@@ -56,17 +56,29 @@ class LoginViewController: UIViewController {
     }
     
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        emailTF.becomeFirstResponder()
+    }
+    
     func setupViewController() {
         currentPage = .login
     }
     
     
     private func setupViewsFor(pageType: PageType) {
-        self.errorMsgLabel.text = nil
-        self.passwordConfirmationTF.isHidden = pageType == .login
-        self.signUpButton.isHidden           = pageType == .login
-        self.loginButton.isHidden            = pageType == .signUp
-        self.forgetPasswordButton.isHidden   = pageType == .signUp
+        errorMsgLabel.text = nil
+        
+        passwordConfirmationTF.isHidden           = pageType == .login
+        signUpButton.isHidden                     = pageType == .login
+        loginButton.isHidden                      = pageType == .signUp
+        forgetPasswordButton.isHidden             = pageType == .signUp
+        
+        emailTF.keyboardType                      = .emailAddress
+        passwordTF.isSecureTextEntry              = true
+        passwordConfirmationTF.isSecureTextEntry  = true
+        
+        emailTF.becomeFirstResponder()
     }
     
     private func showError(msg: String?) {
@@ -88,10 +100,15 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func loginButtonTapped(_ sender: UIButton) {
-        if isSuccessfulLogin {
-            delegate.didSuccessfullyLogin()
-        } else {
-            errorMessage = "Your password is invalid, please try again"
+        view.endEditing(true)
+        MBProgressHUD.showAdded(to: view, animated: true)
+        Helper.delay(durationInSeconds: 2) {
+            MBProgressHUD.hide(for: self.view, animated: true)
+            if self.isSuccessfulLogin {
+                self.delegate.didSuccessfullyLogin()
+            } else {
+                self.errorMessage = "Your password is invalid, please try again"
+            }
         }
     }
     
