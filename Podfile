@@ -6,6 +6,9 @@ target 'Onboarding' do
   use_frameworks!
 
     	pod 'MBProgressHUD', '~> 1.2.0'
+      pod 'Firebase/Auth'
+      pod 'Firebase/Firestore'
+
 
 
   target 'OnboardingTests' do
