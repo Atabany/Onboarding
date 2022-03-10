@@ -2192,6 +2192,7 @@ More information at <a href="http://landonf.org/2009/02/index.html">Landon
 Fuller's blog</a>
 
 
+<<<<<<< HEAD
 ## Loaf
 
 MIT License
@@ -2217,6 +2218,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
+=======
+>>>>>>> 7ec801009ff25e301750b9fb561bd0ce3d568127
 ## MBProgressHUD
 
 Copyright © 2009-2020 Matej Bukovinski

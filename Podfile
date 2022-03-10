@@ -8,8 +8,11 @@ target 'Onboarding' do
     	pod 'MBProgressHUD', '~> 1.2.0'
       pod 'Firebase/Auth'
       pod 'Firebase/Firestore'
+<<<<<<< HEAD
       pod 'Loaf'
 
+=======
+>>>>>>> 7ec801009ff25e301750b9fb561bd0ce3d568127
 
 
 

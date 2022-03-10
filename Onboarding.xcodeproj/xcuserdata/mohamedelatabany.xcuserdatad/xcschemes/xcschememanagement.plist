@@ -7,7 +7,11 @@
 		<key>Onboarding.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>21</integer>
+=======
+			<integer>20</integer>
+>>>>>>> 7ec801009ff25e301750b9fb561bd0ce3d568127
 		</dict>
 	</dict>
 </dict>

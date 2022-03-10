@@ -2259,6 +2259,7 @@ Fuller's blog&lt;/a&gt;
 		</dict>
 		<dict>
 			<key>FooterText</key>
+<<<<<<< HEAD
 			<string>MIT License
 
 Copyright (c) 2019 Mat Schmid
@@ -2290,6 +2291,8 @@ SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
+=======
+>>>>>>> 7ec801009ff25e301750b9fb561bd0ce3d568127
 			<string>Copyright © 2009-2020 Matej Bukovinski
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
