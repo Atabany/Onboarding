@@ -25,6 +25,7 @@
 		2D27FD6027D9488400BF7A58 /* PresenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD5F27D9488400BF7A58 /* PresenterManager.swift */; };
 		2D27FD6327D97A4B00BF7A58 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD6227D97A4B00BF7A58 /* OnboardingCollectionViewCell.swift */; };
 		2D27FD6627D97ADB00BF7A58 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD6527D97ADB00BF7A58 /* Slide.swift */; };
+		2D827BF727DA70DF00E57D05 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D827BF627DA70DF00E57D05 /* AuthManager.swift */; };
 		2DD1FAD827DA2F8C00B990E3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD1FAD727DA2F8C00B990E3 /* HomeViewController.swift */; };
 		2DD1FADA27DA335F00B990E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DD1FAD927DA335F00B990E3 /* GoogleService-Info.plist */; };
 		2DD9255127D9F70700C649E2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9255027D9F70700C649E2 /* LoginViewController.swift */; };
@@ -72,6 +73,7 @@
 		2D27FD5F27D9488400BF7A58 /* PresenterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterManager.swift; sourceTree = "<group>"; };
 		2D27FD6227D97A4B00BF7A58 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		2D27FD6527D97ADB00BF7A58 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		2D827BF627DA70DF00E57D05 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		2DD1FAD727DA2F8C00B990E3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2DD1FAD927DA335F00B990E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2DD9255027D9F70700C649E2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				2D27FD5F27D9488400BF7A58 /* PresenterManager.swift */,
+				2D827BF627DA70DF00E57D05 /* AuthManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DD9255127D9F70700C649E2 /* LoginViewController.swift in Sources */,
+				2D827BF727DA70DF00E57D05 /* AuthManager.swift in Sources */,
 				2D27FD4F27D8FF8E00BF7A58 /* LoadingViewController.swift in Sources */,
 				2D27FD1F27D8F0AC00BF7A58 /* AppDelegate.swift in Sources */,
 				2D27FD5B27D9449C00BF7A58 /* SettingsViewController.swift in Sources */,

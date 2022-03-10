@@ -98,6 +98,14 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func forgetPasswordButtonTapped(_ sender: UIButton) {
+        let alertController = UIAlertController(title: "Forget Password", message: "Please enter your email address", preferredStyle: .alert)
+        alertController.addTextField(configurationHandler: nil)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let okAction = UIAlertAction(title: "Ok", style: .default) { _ in
+            if let tf = alertController.textFields?.first, let email = tf.text, !email.isEmpty {
+                print("Process this email \(email)")
+            }
+        }
         
     }
     
