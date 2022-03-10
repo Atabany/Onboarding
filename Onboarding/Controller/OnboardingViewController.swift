@@ -153,7 +153,7 @@ extension OnboardingViewController: UICollectionViewDataSource, UICollectionView
 
 
 extension OnboardingViewController: LoginViewControllerDelegate {
-    func didSuccessfullyLogin() {
+    func showHome() {
         if let presentedVC = presentedViewController as? LoginViewController {
             presentedVC.dismiss(animated: true) {
                 PresenterManager.shared.show(vc: .mainTabBarController)

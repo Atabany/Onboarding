@@ -37,4 +37,13 @@ enum K {
     enum Cells {
         static let onboardingCollectionViewCell = "OnboardingCollectionViewCell"
     }
+    
+    
+    enum ErrorMessage: String, Error {
+        case invalidForm = "Invalid Form"
+        case passowrdIncorrect = "Password and confirmation doesn't match"
+    }
 }
+
+
+
