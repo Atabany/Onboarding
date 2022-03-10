@@ -6,14 +6,12 @@
 //
 
 import UIKit
-import FirebaseAuth
+
 
 class LoadingViewController: UIViewController {
      
-    private var isUserLoggedIn : Bool  {
-        return Auth.auth().currentUser != nil
-    }
 
+    let authManager = AuthManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +34,7 @@ class LoadingViewController: UIViewController {
     
     
     private func showInitialView() {
-        if isUserLoggedIn {
+        if authManager.isUserLoggedIn {
             PresenterManager.shared.show(vc: .mainTabBarController)
         } else {
             performSegue(withIdentifier: K.Segues.showOnboarding, sender: nil)

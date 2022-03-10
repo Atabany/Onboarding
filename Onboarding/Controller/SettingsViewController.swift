@@ -16,10 +16,6 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
-        
-        Helper.delay(durationInSeconds: 3) {
-            Loaf("Something went wrong oh oh", state: .error, location: .bottom, sender: self).show()
-        }
     }
     
     private func setupViews() {

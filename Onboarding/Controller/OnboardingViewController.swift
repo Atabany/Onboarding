@@ -44,7 +44,7 @@ class OnboardingViewController: UIViewController {
         view.backgroundColor = .systemGroupedBackground
         addSwipeGestures()
         pageControlIndicator.numberOfPages = Slide.collection.count
-        
+        setTexts(with: 0)
     }
     
     private func setupCollectionView() {

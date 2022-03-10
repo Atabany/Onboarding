@@ -10,10 +10,8 @@ import FirebaseAuth
 
 struct AuthManager {
     
-    let auth = Auth.auth()
-    
-   
-    
+    private let auth = Auth.auth()
+
     
     func signUpNewUser(withEmail email: String, password: String, completion:  @escaping (Result<User, Error>) ->()) {
         auth.createUser(withEmail: email, password: password) { result, error in
@@ -50,6 +48,24 @@ struct AuthManager {
             return .failure(error)
         }
     }
+    
+    
+    func resetPassword(withEmail email: String, completion: @escaping (Result<Void, Error>) -> Void) {
+        auth.sendPasswordReset(withEmail: email) { error in
+            if let error = error {
+                completion(.failure(error))
+            } else {
+                completion(.success(()))
+            }
+        }
+    }
+    
+    
+     var isUserLoggedIn : Bool  {
+        return Auth.auth().currentUser != nil
+    }
+
+    
     
 }
 

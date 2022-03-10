@@ -8,7 +8,7 @@
 
 import UIKit
 import MBProgressHUD
-import FirebaseAuth
+import Loaf
 
 protocol LoginViewControllerDelegate: AnyObject {
     func showHome()
@@ -101,14 +101,35 @@ class LoginViewController: UIViewController {
         let alertController = UIAlertController(title: "Forget Password", message: "Please enter your email address", preferredStyle: .alert)
         alertController.addTextField(configurationHandler: nil)
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        let okAction = UIAlertAction(title: "Ok", style: .default) { _ in
+        let okAction = UIAlertAction(title: "Ok", style: .default) { [weak self] _ in
+            guard let self = self else {return}
             if let tf = alertController.textFields?.first, let email = tf.text, !email.isEmpty {
-                print("Process this email \(email)")
+                self.authManager.resetPassword(withEmail: email) { [weak self] result in
+                    guard let self = self else {return}
+                    switch result {
+                    case .success:
+                        self.showAlert(title: "Password Reset Successful", message: "Please check your email to find the password reset")
+                    case .failure(let error):
+                        Loaf(error.localizedDescription, state: .error, location: .bottom, sender: self).show()
+                    }
+                }
             }
         }
+        alertController.addAction(okAction)
+        alertController.addAction(cancelAction)
+        present(alertController, animated: true)
         
     }
     
+    
+    
+    func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true)
+        
+    }
     
     @IBAction func loginButtonTapped(_ sender: UIButton) {
         loginUser()
