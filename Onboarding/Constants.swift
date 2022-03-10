@@ -7,13 +7,12 @@
 
 import Foundation
 
-
-
-
-
 enum K {
     enum Segues {
         static let showOnboarding = "showOnboarding"
+        static let showLoginSignup = "showLoginSignup"
+
+        
     }
 
 
@@ -25,5 +24,10 @@ enum K {
 
     enum Storyboards {
         static let main = "Main"
+    }
+    
+    
+    enum Cells {
+        static let onboardingCollectionViewCell = "OnboardingCollectionViewCell"
     }
 }

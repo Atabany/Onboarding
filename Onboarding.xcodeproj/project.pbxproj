@@ -22,6 +22,9 @@
 		2D27FD5B27D9449C00BF7A58 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD5A27D9449C00BF7A58 /* SettingsViewController.swift */; };
 		2D27FD5D27D9473E00BF7A58 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD5C27D9473E00BF7A58 /* OnboardingViewController.swift */; };
 		2D27FD6027D9488400BF7A58 /* PresenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD5F27D9488400BF7A58 /* PresenterManager.swift */; };
+		2D27FD6327D97A4B00BF7A58 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD6227D97A4B00BF7A58 /* OnboardingCollectionViewCell.swift */; };
+		2D27FD6627D97ADB00BF7A58 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD6527D97ADB00BF7A58 /* Slide.swift */; };
+		2DD9255127D9F70700C649E2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9255027D9F70700C649E2 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		2D27FD5A27D9449C00BF7A58 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		2D27FD5C27D9473E00BF7A58 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		2D27FD5F27D9488400BF7A58 /* PresenterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterManager.swift; sourceTree = "<group>"; };
+		2D27FD6227D97A4B00BF7A58 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		2D27FD6527D97ADB00BF7A58 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		2DD9255027D9F70700C649E2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,8 @@
 		2D27FD1D27D8F0AC00BF7A58 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				2D27FD6427D97AD200BF7A58 /* Model */,
+				2D27FD6127D97A3900BF7A58 /* Views */,
 				2D27FD5E27D9487900BF7A58 /* Manager */,
 				2D27FD5727D942B400BF7A58 /* Helper */,
 				2D27FD5627D9428E00BF7A58 /* Controller */,
@@ -149,6 +157,7 @@
 				2D27FD5427D9052A00BF7A58 /* TabBarController.swift */,
 				2D27FD5A27D9449C00BF7A58 /* SettingsViewController.swift */,
 				2D27FD5C27D9473E00BF7A58 /* OnboardingViewController.swift */,
+				2DD9255027D9F70700C649E2 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -167,6 +176,22 @@
 				2D27FD5F27D9488400BF7A58 /* PresenterManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		2D27FD6127D97A3900BF7A58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2D27FD6227D97A4B00BF7A58 /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2D27FD6427D97AD200BF7A58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D27FD6527D97ADB00BF7A58 /* Slide.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DD9255127D9F70700C649E2 /* LoginViewController.swift in Sources */,
 				2D27FD4F27D8FF8E00BF7A58 /* LoadingViewController.swift in Sources */,
 				2D27FD1F27D8F0AC00BF7A58 /* AppDelegate.swift in Sources */,
 				2D27FD5B27D9449C00BF7A58 /* SettingsViewController.swift in Sources */,
@@ -307,6 +333,8 @@
 				2D27FD5D27D9473E00BF7A58 /* OnboardingViewController.swift in Sources */,
 				2D27FD2127D8F0AC00BF7A58 /* SceneDelegate.swift in Sources */,
 				2D27FD5527D9052A00BF7A58 /* TabBarController.swift in Sources */,
+				2D27FD6627D97ADB00BF7A58 /* Slide.swift in Sources */,
+				2D27FD6327D97A4B00BF7A58 /* OnboardingCollectionViewCell.swift in Sources */,
 				2D27FD5327D900E700BF7A58 /* Constants.swift in Sources */,
 				2D27FD5927D942BD00BF7A58 /* Helper.swift in Sources */,
 			);
