@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class HomeViewController: UIViewController {
     
+    
+    @IBOutlet weak var emailLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +21,12 @@ class HomeViewController: UIViewController {
     
     private func setupNavigationBar() {
         self.title = K.NavigationTitles.home
+        
+        if let user = Auth.auth().currentUser {
+            self.emailLabel.text = user.email ?? "user email"
+        } else {
+            self.emailLabel.text = "user email: "
+        }
     }
     
 }

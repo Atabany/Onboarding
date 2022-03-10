@@ -7,33 +7,41 @@
 
 import UIKit
 import MBProgressHUD
+import Loaf
 
 class SettingsViewController: UIViewController {
+    
+    private let authManager = AuthManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         
+        Helper.delay(durationInSeconds: 3) {
+            Loaf("Something went wrong oh oh", state: .error, location: .bottom, sender: self).show()
+        }
     }
     
-    
     private func setupViews() {
-        view.backgroundColor = .systemPink
         title = K.NavigationTitles.settings
     }
     
     
     @IBAction func logoutbuttonTapped(_ sender: UIBarButtonItem) {
         MBProgressHUD.showAdded(to: self.view, animated: true)
-        Helper.delay(durationInSeconds: 2) {
+        Helper.delay(durationInSeconds: 0.7) { [weak self] in
+            guard let self = self else {return}
             MBProgressHUD.hide(for: self.view, animated: true)
-            PresenterManager.shared.show(vc: .onboarding)
+            let result = self.authManager.logoutUser()
+            switch result {
+            case .success:
+                PresenterManager.shared.show(vc: .onboarding)
+            case .failure(let error):
+                Loaf(error.localizedDescription, state: .error, location: .bottom, sender: self).show()
+                print()
+            }
         }
-        
     }
-    
-    
-    
-    
+
     
 }

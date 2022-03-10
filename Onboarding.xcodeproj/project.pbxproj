@@ -26,6 +26,7 @@
 		2D27FD6327D97A4B00BF7A58 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD6227D97A4B00BF7A58 /* OnboardingCollectionViewCell.swift */; };
 		2D27FD6627D97ADB00BF7A58 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27FD6527D97ADB00BF7A58 /* Slide.swift */; };
 		2DD1FAD827DA2F8C00B990E3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD1FAD727DA2F8C00B990E3 /* HomeViewController.swift */; };
+		2DD1FADA27DA335F00B990E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DD1FAD927DA335F00B990E3 /* GoogleService-Info.plist */; };
 		2DD9255127D9F70700C649E2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9255027D9F70700C649E2 /* LoginViewController.swift */; };
 		B8E45CB907BD684C4C2E447E /* Pods_Onboarding_OnboardingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38EF6337FE29F970C04143BF /* Pods_Onboarding_OnboardingUITests.framework */; };
 		F093A296CEF1077ED2A03D54 /* Pods_Onboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C848FBF1EB7E20BFCF331F20 /* Pods_Onboarding.framework */; };
@@ -72,6 +73,7 @@
 		2D27FD6227D97A4B00BF7A58 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		2D27FD6527D97ADB00BF7A58 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		2DD1FAD727DA2F8C00B990E3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2DD1FAD927DA335F00B990E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2DD9255027D9F70700C649E2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		38EF6337FE29F970C04143BF /* Pods_Onboarding_OnboardingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Onboarding_OnboardingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5477137FE8310081ACB72321 /* Pods-Onboarding-OnboardingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Onboarding-OnboardingUITests.debug.xcconfig"; path = "Target Support Files/Pods-Onboarding-OnboardingUITests/Pods-Onboarding-OnboardingUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				2D27FD5227D900E700BF7A58 /* Constants.swift */,
 				2D27FD2727D8F0AD00BF7A58 /* Assets.xcassets */,
 				2D27FD2927D8F0AD00BF7A58 /* LaunchScreen.storyboard */,
+				2DD1FAD927DA335F00B990E3 /* GoogleService-Info.plist */,
 				2D27FD2C27D8F0AD00BF7A58 /* Info.plist */,
 			);
 			path = Onboarding;
@@ -347,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D27FD2B27D8F0AD00BF7A58 /* LaunchScreen.storyboard in Resources */,
+				2DD1FADA27DA335F00B990E3 /* GoogleService-Info.plist in Resources */,
 				2D27FD2827D8F0AD00BF7A58 /* Assets.xcassets in Resources */,
 				2D27FD2627D8F0AC00BF7A58 /* Main.storyboard in Resources */,
 			);
