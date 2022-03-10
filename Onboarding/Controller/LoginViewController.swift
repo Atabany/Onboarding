@@ -9,6 +9,9 @@
 import UIKit
 import MBProgressHUD
 import Loaf
+import Combine
+
+
 
 protocol LoginViewControllerDelegate: AnyObject {
     func showHome()
@@ -53,9 +56,13 @@ class LoginViewController: UIViewController {
     weak var delegate: LoginViewControllerDelegate!
     
     
+    var subscriber: AnyCancellable?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViewController()
+        observeTextFields()
     }
     
     
@@ -64,8 +71,21 @@ class LoginViewController: UIViewController {
         emailTF.becomeFirstResponder()
     }
     
+    
+    
     func setupViewController() {
         currentPage = .login
+        [emailTF, passwordTF, passwordConfirmationTF].forEach {
+            $0?.clearButtonMode = .whileEditing
+        }
+    }
+    
+    private func observeTextFields() {
+        subscriber = NotificationCenter.default.publisher(for: UITextField.textDidChangeNotification)
+            .sink { [unowned self] notification in
+                guard let _ = notification.object as? UITextField else {return}
+                self.errorMessage = nil
+            }
     }
     
     
@@ -218,10 +238,7 @@ class LoginViewController: UIViewController {
             }
             completion(.success((email: email, password: password)))
         }
-        
-        
-        
-        
+   
     }
     
     
